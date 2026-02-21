@@ -1,4 +1,5 @@
-# BIP-39 Seedphrase Obfuscator 🔐
+# 🛡️ Seed Obfuscator 🔐
+[![Download Executable](https://img.shields.io/badge/Download_Executable-v1.0.0-blue?style=for-the-badge&logo=linux)](https://github.com/reimen-cpu/Seed-Obfuscator/releases/latest/download/seed-obfuscator)
 
 A lightweight, 100% offline desktop application to secure your BIP-39 seed phrases. It uses a mathematical XOR transformation with a secret key to convert your seed phrase into a *different* but valid BIP-39 seed phrase.
 
