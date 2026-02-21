@@ -431,7 +431,11 @@ class BIP39ObfuscatorApp:
         2. En el directorio de trabajo actual.
         Soporta los nombres: bip39.txt, english.txt, wordlist.txt
         """
-        script_dir = Path(__file__).resolve().parent
+        if getattr(sys, 'frozen', False):
+            script_dir = Path(sys._MEIPASS)
+        else:
+            script_dir = Path(__file__).resolve().parent
+
         candidates = ["bip39.txt", "english.txt", "wordlist.txt"]
 
         for name in candidates:
